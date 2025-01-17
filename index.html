@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    <title > Rakshitha H R - Portfolio</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:  -apple-system,  sans-serif;
+}
+:root{
+    --bg-color:white;
+    --snd-bg-color:black;
+    --text-color:black;
+    --main-color:#6f215e;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+/* header section code */
+.header{
+    position: fixed;
+    width:100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 5% ;
+    background:var(--main-color);
+    backdrop-filter: white(10px);
+    transition: all 0.5s ease;
+    
+   
+}
+.logo{
+    font-size: 3rem;
+    color:white;
+    font-size: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    transform: scale(1.05);
+
+}
+.navbar{
+    font-size: 1.9rem;
+    color:white;
+   
+    margin-left: 4rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+    word-spacing: 5rem;
+    
+
+}
+.navbar a:hover, 
+.navbar a.active{
+    color: black;
+    
+
+}
+#menu-icon{
+    font-size:3.6rem;
+    color:black;
+    cursor: pointer;
+    display:none;
+    
+
+}
+/*Home section code*/
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-img img{
+    width: 20vw;
+    border: 0px solid var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0 0 25px var(--main-color);
+        cursor: pointer;
+       
+        transition: 0.4s ease;
+       
+
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 35px var(--main-color),
+                0 0 45px var(--main-color);
+
+    
+
+}
+@keyframes floatImage {
+    0%{
+        transition: translateY(0);
+
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.home-content{
+    margin-left: 5rem;
+
+}
+.home-content h3{
+    font-size:3.7rem;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+span{
+    color:var(--main-color);
+}
+.home-content h2{
+    font-size: 3rem;
+   
+    font-weight: 700;
+    line-height: 1.3;
+}
+    .home-content p{
+        font-size: 1.6rem;
+        margin:2rem 0.3rem;
+
+    }
+    .social-media a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        background: transparent;
+        border:0.2rem solid var(--main-color);
+        border-radius: 50%;
+        font-size: 2rem;
+        color:var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+        transition: 0.3s ease;
+
+          
+    }
+    .social-media a:hover{
+        transform: scale(1.2) translateY(-10px);
+        background-attachment: var(--main-color);
+        color:var(--bg-color);
+        box-shadow: 0 0  25px var(--main-color);
+
+
+    }
+    .btn{
+        display:inline-block ;
+        padding:1rem 3rem;
+        background-color: var(--main-color);
+        border-radius: 4rem;
+        box-sizing: none;
+        font-size: 1.6rem;
+        color: var(--bg-color);
+        letter-spacing: 0.1rem;
+        font-weight:600;
+        transition: 0.3s ease;
+
+
+    }
+    .btn:hover{
+        box-shadow: 0 0 1.6rem var(--main-color);
+    }
+    /* About Section*/
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         color:white;
+         gap:2rem;
+        background:black;
+        
+    }
+    .about-img img{
+       /* width: 20vw;
+        border: 0px solid var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0 0 25px var(--main-color);
+        cursor: pointer;
+        transition: 0.4s ease;
+        align-items: center;
+        */
+        width: 25vw;
+        border: 2px solid var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0 0 25px var(--main-color);
+        cursor: pointer;
+        transition: 0.4s ease;
+       
+        
+       
+      
+       
+       
+    }
+    .about-img img:hover{
+        box-shadow: 0 0 25px var(--main-color),
+                    0 0 35px var(--main-color),
+                    0 0 45px var(--main-color);
+  }
+  .heading{
+    font-size: 6rem;
+    text-align:left;
+  }
+  .about-content{
+    padding: 0 4rem;
+    
+  }
+  .about-content h2{
+    text-align: left;
+    margin: 1rem 0.3rem;
+    line-height: 1.2;
+
+  }
+  .about-content h3{
+    font-size: 2rem;
+
+  }
+  .about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0.3rem;
+    
+  }
+ /* skills section code*/
+ .skills h2{
+    text-align: center;
+    margin-bottom:5rem;
+
+ }
+ .skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+ }
+ .skills-container .skills-box{
+    flex: 1 1 30rem;
+    background: white;
+    border-radius: 2rem;
+    padding: 6rem 2rem 6rem;
+    text-align: center;
+    border: 0.3rem solid var(--bg-color);
+    transition: 0.3s ease;
+ }
+ .skills-container .skills-box:hover{
+    border-color: var(--main-color);
+    transform:scale(1.02);
+
+
+ }
+.skills-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+.skills-box h3{
+    font-size: 2.6rem;
+}
+.skills-box p{
+    font-size: 1.6rem;
+    margin: 0.3rem;
+}
+.heading{
+    margin: 2rem 0.3rem;
+   
+}
+.heading h1{
+    margin: 2rem 0.3rem;
+
+}
+.project-container h1{
+    margin: 2rem 0.3rem;
+    
+   
+
+
+}
+.resume-img img{
+    width: 20vw;
+    border: 0px solid var(--main-color);
+        border-radius: 50%;
+        box-shadow: 0 0 25px var(--main-color);
+        cursor: pointer;
+        transition: 0.4s ease;
+       
+       
+
+}
+.resume-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 35px var(--main-color),
+                0 0 45px var(--main-color);
+}
+.heading{
+    margin: 2rem 0.3rem;
+
+}
+/*contact*/
+.contact{
+    background: var(--bg-color);
+
+}
+.contact .heading{
+    text-align: center;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+.contact form{
+    max-width: 80rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+    
+    .contact form .input-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+.contact form .input-box input, .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 0.25rem solid var(--main-color);
+    margin: 0.7rem 0;
+    resize: none;
+}
+.contact form .input-box input{
+    width: 49%;
+    margin: 0.7rem 0.35rem;
+
+}
+.contact form .btn{
+    margin-top: 2rem;
+
+}
+/*footer section*/
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--snd-bg-color);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+.footer .social a{
+   /* font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    
+    text-align: center;
+    margin: 0 10px;
+    transition: 0.3s ease;
+    display:inline-block ;
+    */ display: inline-flex;
+    justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        background: transparent;
+        border:0.2rem solid var(--main-color);
+        border-radius: 50%;
+        font-size: 2rem;
+        color:var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+        transition: 0.3s ease;
+    
+       
+
+
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+        background-attachment: var(--main-color);
+        color:var(--bg-color);
+        box-shadow: 0 0  25px var(--main-color);
+
+}
+.footer .copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+.container{
+    color:white;
+}
+
+
+    
+   
+
+    </style></head>
+<body>
+    <!--Header Section code -->
+    
+    <header class="header">
+        <a href="#home" class="logo">Rakshitha H R</a>
+        <i class='bx bx-menu'id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="container"> Home </a>
+            <a href="#about"  class="container"> About </a>
+            <a href="#skills"  class="container"> Skills </a>
+            <a href="#projects"  class="container"> Projects </a>
+            <a href="#resume"  class="container"> Resume </a>
+            <a href="#contact"  class="container"> Contact </a>
+           
+        </nav>
+    </header>
+    <!-- Home Section Code-->
+     <section class="home" id="home">
+        <div class="home-img">
+            <img src="file:///C:/Users/acer/Desktop/image/rakshith.jpg" alt=>
+      
+
+        </div>
+        <div class="home-content">
+            <h1>Hello, Myself</h1>
+            <h2>Rakshitha H R</h2>
+            <h1>And I'm a <span class="multiple-text">Web Developer</span></h1>
+            <p>Hello! I'm Rakshitha, a tech-savvy enthusiast with a passion for coding,design and innovation.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin'></i>
+                
+                <a href="#"><i class='bx bxl-github'></i> </a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+     </section>
+     <!-- About Section code-->
+      <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading"> About<span> Me</span></h2>
+        <h3> I'm a <span>Frontend Developer</span></h3>
+        <p>As a highly motivated and detail-oriented individual,I bring a strong passion for learning and growth to my work.
+            With a solid foundation in frontend development,I excel in creating innovative solutions that meet and exceed expectations.
+        </p>
+        <a href="#" class="btn">read More</a>
+    </div>
+   
+    <div class=about-img >
+      <img src="file:///C:/Users/acer/Desktop/image/rakshith.jpg" alt=>
+    </div>
+    </section>
+    <!--Skills section code-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span> Skills</span> </h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="bx bx-code"></i>
+                <h3>Soft Skills</h3>
+                <br>
+                <p> Effective Communication: Clearly articulating ideas,concerns,and progress to stakeholders
+                    Teamwork: Collaborating with cross-functional teams to achieve shared goals
+                    Active Listening: Attentively absorbing feedback,guidance and expertise
+                    Time Management: Prioritizing tasks,meeting deadlines,and balancing multiple responsibilities.
+                <p>
+                    <br>
+                    <br>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <i class="bx bx-code"></i>
+                    <h3>Technical Skills</h3>
+                    <br>
+                    <p> * Basic  knowledge of Programming languages C, C++, Java, Python,SQL
+                        
+                        * DBMS (Database Management System) and OS (Operating System)
+                        
+                        * Basic knowledge of HTML,CSS and Javascript
+                    <p>
+                        <br>
+                        <br>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+        </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+  
+    <div class=" projects-container">
+        <h2 class="heading">My <span>Projects</span></h2>
+    <h1><span>Online Cafe Menu Website : </span> Developed the frontend of the website using HTML and CSS,allowing us to handle customer reservations,while the backend is powered by PHP. </h1>
+    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-91" title="_blank " >View Project</a><br>
+<br>
+<br>
+    <h1><span>Online Cat Photos Shop:</span>Developed the frontend of the website using HTML and CSS,allowing us to handle customer reservations,while the backend is powered by PHP.</h1>
+    <a href="C:\Users\acer\Desktop\4.html" title="_blank " >View Project</a><br>
+<br>
+<br>
+    <h1> <span>Python Tic Tac Toe Project:</span>A interactive Tic Tac Toe game built bu using python that allows two players,  computer and user to compete against each other. </h1>
+    <a href="C:\Users\acer\Desktop\3.py" title="_blank " >View Project</a><br>
+<br>
+<br>
+    <h1><span>landing page:</span>Developed the frontend of the website using HTML and CSS,allowing us to handle customer reservations,while the backend is powered by PHP.</h1>
+    <a href="C:\Users\acer\Desktop\html\indexed.html" title="_blank " >View Project</a>
+    <br>
+    <br>
+    <br>
+    <a href="#" class="btn">Read More</a>
+</div>
+</section>
+<!--Resume Section-->
+<section class="resume" id="resume">
+<div class="resume-img">
+    <h2 class ="heading" > My <span>Resume</span></h2>
+    <img src="file:///C:/Users/acer/Desktop/image/rakshith.jpg" alt=>
+
+    <a href="https://in.docworkspace.com/d/sINOS76mSAu6utbsG?sa=601.1123&ps=1&fn=Resume4_removed.pdf "title="_blank"> <br>
+        <br>
+                                     <h1> View Resume </h1> </a>
+   <br>
+   <br>
+        <a href="#" class="btn">Read More</a>
+       </div>
+      
+</section>
+<!--contact section code-->
+<section class="contact" id="contact">
+    <h2 class="heading"> Contact <span> Me </span></h2>
+    <form action="#">
+        <div class="input-box">
+    <input type="text" placeholder="First name"></input>
+    <input type="text"  placeholder="Last name"></input>
+
+</div>
+<div class="input-box">
+    <input type="number" placeholder="phone number">
+    <input type="email" name="email" placeholder="Email">
+
+</div>
+<textarea name="message" id="" cols="30" placeholder="Your Message"></textarea>
+<input type="submit" value="Send Message" class="btn">
+
+</form>
+</section>
+<!--footer section-->
+<footer class="footer">
+    <div class="social">
+        <a href="#"><i class='bx bxl-linkedin'></i>
+                
+            <a href="#"><i class='bx bxl-github'></i> </a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+    </div>
+<p class="copyright">
+    &copy;Rakshitha H R - All Rights Reserved
+</p>
+</footer>
+</body></html>
